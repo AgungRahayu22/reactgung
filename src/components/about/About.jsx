@@ -7,7 +7,7 @@ import { FirstName, LastName } from "../../utils/getName";
 
 import './About.css';
 
-import profile from '../../assets/profile.png';
+import profile from '../../assets/hi-removebg-preview.png';
 
 const useStyles = makeStyles((theme) => ({
   main: {
