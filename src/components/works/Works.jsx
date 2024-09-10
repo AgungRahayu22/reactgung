@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "../content/TextDecrypt";
@@ -8,11 +7,11 @@ import { TextDecrypt } from "../content/TextDecrypt";
 import './Works.css';
 
 // Import ../../assets/recentprojects/
-import Portfolio from '../../assets/recentprojects/react-portfolio.png';
-import Veritru from '../../assets/recentprojects/veritru.png';
-import Lofo from '../../assets/recentprojects/lofo.png';
-import Startup from '../../assets/recentprojects/startup.png';
-import Lacalle from '../../assets/recentprojects/lacalle.png';
+import mobile from '../../assets/recentprojects/mobile.png';
+import web from '../../assets/recentprojects/web.png';
+import kopi from '../../assets/recentprojects/kopi.png';
+import fifo from '../../assets/recentprojects/fifo.png';
+import inggris from '../../assets/recentprojects/inggris.png';
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -24,49 +23,43 @@ const useStyles = makeStyles((theme) => ({
 
 export const Works = () => {
   const classes = useStyles();
-  const [projects, setProjects] = useState([
+  const [projects] = useState([
     { 
       id: 1,
-      title: 'React Portfolio', 
-      description: `Designed and developed a ReactJS portfolio 
-      with fancy 3D animations using Three.js for 
-      the background element.`,
+      title: 'Design App Mobile Edunote', 
+      description: `Merancang dan mengembangkan aplikasi mobile Edunote yang berfokus pada kemudahan penggunaan bagi pelajar, 
+      dengan antarmuka intuitif dan fitur-fitur
+      edukatif yang mendukung kegiatan belajar mengajar.`,
       alter: 'React Portfolio',
-      image: `${Portfolio}`,
+      image: mobile,
     },
     { 
       id: 2,
-      title: 'VeriTru Project', 
-      description: `An advocacy project website built using
-      MEAN stack with fact-checking tool to promote actions against
-      fake news.`,
+      title: 'Website Agsa Design', 
+      description: `Membangun website untuk Agsa Design dengan menggunakan teknologi MEAN stack, menampilkan portofolio desain yang kreatif dan modern serta memudahkan klien dalam melihat dan memesan jasa desain`,
       alter: 'VeriTru Project',
-      image: `${Veritru}`,
+      image: web,
     },
     { 
       id: 3,
-      title: 'LoFo Project', 
-      description: `Logistics and Forwarding website built using
-      ReactJS to design and develop its front-end.`,
+      title: 'Design Landing Page Coffee Shop', 
+      description: `Mendesain landing page untuk sebuah kedai kopi yang modern dan menarik, dengan tata letak yang responsif dan visual yang menonjolkan produk unggulan kedai.`,
       alter: 'LoFo Project',
-      image: `${Lofo}`,
+      image: kopi,
     },
     { 
       id: 4,
-      title: 'Startup Project', 
-      description: `A website portfolio project for the Startup Dev Team
-      built using MEVN stack to demonstrate the CRUD capabilities of the tech stack.`,
+      title: 'Design Landing Page Bank Fifo', 
+      description: `Membangun landing page untuk Bank Fifo dengan menggunakan teknologi MEVN stack, menampilkan fitur-fitur perbankan dan informasi produk dengan antarmuka yang ramah pengguna.`,
       alter: 'Startup Project',
-      image: `${Startup}`,
+      image: fifo,
     },
     { 
       id: 5,
-      title: 'LaCalle Cafe', 
-      description: `A website project for the La Calle Cafe business
-      built using Wordpress and PHP with integrated SEO tools to help
-      the business ramp up its prospects and lead generation.`,
-      alter: 'Startup Project',
-      image: `${Lacalle}`,
+      title: 'Website Les Bahasa Inggris', 
+      description: `Membangun website untuk lembaga les Bahasa Inggris dengan menggunakan Wordpress dan PHP, dilengkapi dengan alat SEO terintegrasi untuk meningkatkan prospek dan menghasilkan lebih banyak leads bagi bisnis.`,
+      alter: 'LaCalle Cafe',
+      image: inggris,
     },
   ]);
 

@@ -1,59 +1,102 @@
 .about {
-  width: 80%;
-  margin-left: 7rem;
-  margin-right: 7rem;
+  width: 100%;
+  margin: 0 auto;
+  /* Mengatur margin agar seimbang */
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  /* Memastikan konten terpusat */
 }
-.heading {
-  width: 30%;
-  font-size: 1.15rem;
-}
+
 ._img {
-  margin: 10em;
-  width: 35em;
-  height: 20em;
+  width: 100%;
+  /* Ukuran gambar responsif */
+  height: auto;
+  /* Tinggi otomatis */
+  max-width: 35em;
+  /* Menetapkan lebar maksimum */
+  margin: 2em;
+  /* Mengurangi margin */
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.51);
 }
+
 ._content_wrapper {
   width: 40%;
+  /* Lebar konten untuk desktop */
 }
+
+/* Responsif untuk tablet */
+@media (max-width: 1024px) {
+  .about {
+    flex-direction: column;
+    /* Menyusun elemen dalam kolom */
+    align-items: center;
+    /* Memusatkan konten */
+  }
+
+  ._img {
+    max-width: 28em;
+    /* Menetapkan lebar maksimum untuk tablet */
+  }
+
+  ._content_wrapper {
+    width: 80%;
+    /* Mengatur lebar konten */
+    text-align: center;
+    /* Menyusun teks di tengah */
+  }
+}
+
+/* Responsif untuk ponsel */
+@media (max-width: 768px) {
+  ._img {
+    max-width: 22em;
+    /* Menetapkan lebar maksimum untuk ponsel */
+  }
+
+  ._content_wrapper {
+    width: 90%;
+    /* Mengatur lebar konten */
+    text-align: center;
+    /* Menyusun teks di tengah */
+  }
+}
+
+/* Responsif untuk ponsel kecil */
+@media (max-width: 480px) {
+  ._img {
+    max-width: 18em;
+    /* Menetapkan lebar maksimum untuk ponsel kecil */
+  }
+
+  ._content_wrapper {
+    width: 95%;
+    /* Mengatur lebar konten */
+    text-align: center;
+    /* Menyusun teks di tengah */
+  }
+}
+
+/* Gaya untuk tombol kontak */
 .contact-btn {
   margin-right: 20px;
   text-decoration: none;
-  color: #464646;
-}
-.contact-btn:hover {
-  margin-right: 20px;
-  text-decoration: none;
+  color: #fff;
+  /* Mengubah warna teks tombol menjadi putih */
   background-color: #ec704c;
+  /* Warna latar belakang tombol */
+  padding: 0.5em 1em;
+  /* Memberikan sedikit padding */
+  border-radius: 5px;
+  /* Memberikan border radius untuk efek rounded */
+  transition: background-color 0.3s ease;
+  /* Efek transisi saat hover */
 }
-@media (max-width: 1024px) {
-  .about {
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-  ._img {
-    margin: 2em;
-  }
-  ._content_wrapper {
-    width: 40%;
-  }
-}
-@media (max-width: 768px) {
-  .about {
-    margin-left: 4em;
-    margin-right: 4em;
-    flex-direction: column;
-  }
-  ._img {
-    width: 15em;
-    height: 12em;
-  }
-  ._content_wrapper {
-    width: 15em;
-  }
+
+.contact-btn:hover {
+  background-color: #d85e3d;
+  /* Warna saat hover, bisa disesuaikan */
 }

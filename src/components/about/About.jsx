@@ -6,7 +6,6 @@ import { TextDecrypt } from "../content/TextDecrypt";
 import { FirstName, LastName } from "../../utils/getName";
 
 import './About.css';
-
 import profile from '../../assets/hi-removebg-preview.png';
 
 const useStyles = makeStyles((theme) => ({
@@ -19,25 +18,21 @@ const useStyles = makeStyles((theme) => ({
 
 export const About = () => {
   const classes = useStyles();
-  const greetings = "Hello there!";
-  const aboutme = `I'm ${FirstName} ${LastName}, a multidisciplinary 
-                  designer & developer. I'm always down for something new and challenging!
-                  I'm here to help you create beautifully formatted websites. 
-                  My projects mostly includes web development.`;
+  const greetings = "Hallo semuanya!";
+  const aboutme = `Saya ${FirstName} ${LastName},seorang desainer UI/UX dan pengembang web. 
+                  Saya selalu terbuka untuk hal-hal baru dan menantang! 
+                  Saya siap membantu Anda menciptakan website yang indah dan terstruktur dengan baik. 
+                  Proyek-proyek saya sebagian besar berfokus pada pengembangan web.`;
 
   return (
     <section id="about">
       <Container component="main" className={classes.main} maxWidth="md">
         <div className="about">
-          <div className="_img"
-            style={{ 
-              background: "url(" + profile + ")",
-              backgroundSize: 'contain',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-            }}
-          >
-          </div>
+          <img 
+            src={profile} 
+            alt="Profile" 
+            className="_img" 
+          />
           <div className="_content_wrapper">
             <Typography component='h2' variant="h5">
               <TextDecrypt text={`${greetings}`} />

@@ -18,11 +18,13 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     "@media (max-width: 768px)": {
       flexDirection: 'column',
+      textAlign: 'center',
     },
   },
   image: {
-    width: '400px', // Ukuran lebar gambar diperbesar
-    height: 'auto', // Menyesuaikan tinggi gambar secara otomatis
+    width: '100%', 
+    maxWidth: '400px', 
+    height: 'auto', 
     marginRight: theme.spacing(5),
     "@media (max-width: 768px)": {
       marginRight: 0,
@@ -30,15 +32,14 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    marginLeft: theme.spacing(5), // Menjaga margin kiri agar proporsional
+    marginLeft: theme.spacing(5),
     "@media (max-width: 768px)": {
-      marginLeft: theme.spacing(0),
-      textAlign: 'center',
+      marginLeft: 0,
     },
   },
   jobs: {
     "@media (max-width: 768px)": {
-      fontSize: '3rem',
+      fontSize: '2rem',
     },
   },
 }));
