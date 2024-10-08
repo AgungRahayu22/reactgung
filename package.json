@@ -2,9 +2,9 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "homepage": "",
-  "description": "A clean and customizable ReactJS portfolio template for fellow developers. Credits to Jo Lienhoop!",
-  "repository": "https://github.com/taniyow/react-portfolio",
-  "author": "Mark Tan <markcmtan@gmail.com>",
+  "description": "A portfolio website using React",
+  "repository": "https://github.com/AgungRahayu22/react-agung",
+  "author": "Agung Rahayu <agungrahayu99600@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
