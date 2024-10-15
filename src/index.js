@@ -1,6 +1,8 @@
 import React from "react";
-import { render } from "react-snapshot";
+import { createRoot } from "react-dom/client";  // gunakan createRoot
 import { App } from "./app/App";
 import "./index.css";
 
-render(<App />, document.getElementById("root"));
+// Menggunakan createRoot untuk render
+const root = createRoot(document.getElementById("root"));
+root.render(<App />);
